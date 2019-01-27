@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Multiplicatron</title>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+	<section style="display:none;">
+
+		<nav>
+			<a href="/inicio/">Inicio</a>
+			<a href="/instrucciones/">Instrucciones</a>
+			<a href="/preguntas/">Preguntas</a>
+		</nav>
+	</section>
+	<section class="juego">
+		<form id="multiplicatron">
+			<header>
+				<h1>Juega a Multiplicar</h1>
+			</header>
+			<section class="ajustes">
+				<div class="rango">
+					<strong>Rango: </strong>
+					<input class="min" type="number" name="min" value="2"> - 
+					<input class="max" type="number" name="max" value="10"> | 
+				</div>
+		     	<div class="tiempo">
+					<strong>Tiempo: </strong>
+					<input class="time" type="number" name="time" value="5"> segundos
+		     	</div>
+			</section>
+			<section class="zona">
+				<input class="a" type="number" name="a">
+				<span class="signo">X</span>
+				<input class="b" type="number" name="b">
+				<span class="signo">=</span>
+				<input class="result" name="resultado">
+				<input type="submit" value="Responder">
+				<span id="counter">0</span>
+			</section>
+			<hr>
+			<ol class="output"></ol>
+			<p>Hecho por <a href="http://cristian.salin.as/">Cristián Salinas</a> para la gente que no sabe multiplicar tan bien, y que podría hacerlo mejor.</p>
+		</form>
+
+		<aside style="display:none;" class="battle">
+			<div id="heroe">
+				<span>100</span>
+			</div>
+			<div id="monstruo">
+				<span>100</span>
+			</div>
+		</aside>
+	</section>
+</body>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="src/scripts.js"></script>
+</html>

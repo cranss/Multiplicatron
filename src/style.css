@@ -1,0 +1,80 @@
+body {
+	background: #ccf;
+	color: #000;
+	font-family: arial, sans-serif;
+}
+form#multiplicatron {
+    width: 50%;
+    float: left;
+}
+input[type=number] {
+	background: transparent;
+	color: black;
+	border: 0;
+	width: 100px;
+	padding: 0;
+	text-align: center;
+}
+.result {
+	width: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+.a,.b {
+	font-size: 30px !important;
+}
+.good,
+.bad {
+	font-weight: bold;
+}
+.good {
+	color: #00ff39;
+	background: #006b00;
+}
+.bad {
+	color: #d60101;
+	background: #310000;
+}
+
+.slow {
+	background: #000;
+}
+.big {
+	font-size: 30px;
+}
+section.ajustes div{
+	padding: 5px;
+}
+section.zona {
+	padding: 20px;
+	background: rgba(0,0,0,.1);
+	text-align: center;
+}
+ol.output {
+    height: 300px;
+    width: 100%;
+    overflow-y: auto;
+    padding: 0;
+}
+ol li {
+	display: block;
+	min-width: 300px;
+	padding: 5px 5px 5px 20px;
+	margin-bottom: 5px;
+	margin-left: 0;
+}
+.battle {
+	float: right;
+	font-size: 60px;
+	font-weight: bold;
+	width: 50%;
+}
+
+.battle #heroe {
+	text-align: center;
+	color: blue;
+}
+.battle #monstruo {
+	text-align: center;
+	color: red;
+}
